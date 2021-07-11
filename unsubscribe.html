@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="table.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <style>
+       /* body{
+            background-image: url('light.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Oswald', sans-serif;
+        }*/
+        .filter{
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ z-index: 1;
+ background: rgb(233,76,161);
+background: -moz-linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(233,76,161,1) 0%, rgba(199,74,233,1) 100%);
+background: linear-gradient(90deg, rgb(228,76,233) 0%, rgb(74,233,152) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94ca1",endColorstr="#c74ae9",GradientType=1);
+opacity: .7;
+}
+        .result{
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 70%;
+            height: 300px;
+            padding: 20px;
+            margin: 10% auto;
+        }
+        .btn-login{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+    border-radius: 10px;;
+}
+input[type="text"]{
+	margin-top: 30px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+    border-radius: 10px;
+}
+.label{
+    color: #fff;
+    font-size: 25px;
+}
+h3{
+    background-color: rgb(26, 209, 209);
+    padding: 2px;
+    color: rgb(10, 10, 9);
+    font-size: 37px; 
+    text-align: center;
+}
+p{
+    color: beige;
+    font-size: 25px;
+    font-weight: bold;
+}
+a{
+    background-color: red;
+}
+input[type="checkbox"]{
+  width:20px;
+  height:20px;
+}
+#id{
+    font-size: 20px;;
+}
+    </style>
+</head>
+<body>
+    <div class="filter">
+    <div class="result">
+    <div>
+        <h3>DELETE USER!</h3>
+    </div>
+    <div class="form-input">
+    <form action="unsubscribe.php" method="POST">
+     <div>  
+    <label for="firstName" class="label">Student Name</label>
+              <input type="text" class="form-control" id="firstName " name="firstName" placeholder="enter firstname here" >
+              <input type="text" class="form-control" id="lastName " name="lastName" placeholder="enter lastname here" >
+            </div> <div>
+               <p> Are you sure want to unsubscribe <input type="checkbox" id ="check"><p>
+            </div><br>
+              <input  type="submit" value="DELETE" class="btn-login" />
+            </div><br><br>        
+</form>
+</div>
+</body>
+</html> 

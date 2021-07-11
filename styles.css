@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+section{
+  width: 55%;
+  float:left;
+  height: 400px;
+}
+
+.right{
+    width: 35%;
+    float: left;
+    height: 600px;
+    
+}
+
+
+
+
+
+
+
